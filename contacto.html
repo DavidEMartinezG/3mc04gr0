@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Emcoagro - Empresas Consolidadas Agrícolas</title>
+    
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        :root { 
+            --green-primary: #155d27; 
+            --green-light: #228b22; 
+            --earth-accent: #c48b36; 
+        }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #f8fafc; 
+            color: #334155; 
+        }
+        h1, h2, h3, h4, .font-merriweather { 
+            font-family: 'Merriweather', serif; 
+        }
+        .text-green-brand { color: var(--green-primary); }
+        .bg-green-brand { background-color: var(--green-primary); }
+        .bg-earth-brand { background-color: var(--earth-accent); }
+    </style>
+</head>
+<body class="overflow-x-hidden antialiased selection:bg-[#155d27] selection:text-white relative">
+
+    <!-- BARRA DE CONTACTO SUPERIOR -->
+    <div class="bg-green-brand text-white/90 py-2 text-xs md:text-sm hidden md:block">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex gap-6">
+                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i> Saltillo, Coahuila</span>
+                <span class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i> emco.slw@outlook.com</span>
+            </div>
+            <div>
+                <span class="flex items-center gap-2 font-semibold"><i data-lucide="phone" class="w-4 h-4"></i> 844-455-8699</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <nav class="w-full bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center h-auto">
+            
+            <!-- LOGO IMAGEN AMPLIADO -->
+            <a href="index.html" class="flex items-center shrink-0">
+                <img src="logo.png" alt="Emcoagro Logo" class="h-20 md:h-28 w-auto object-contain max-w-[220px] md:max-w-[300px]">
+            </a>
+            
+            <!-- Enlaces de Escritorio (Multi-página) -->
+            <div class="hidden md:flex gap-8 items-center">
+                <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-[#155d27] transition-colors">Inicio</a>
+                <a href="nosotros.html" class="text-sm font-medium text-slate-600 hover:text-[#155d27] transition-colors">Nosotros</a>
+                <a href="actividades.html" class="text-sm font-medium text-slate-600 hover:text-[#155d27] transition-colors">Actividades</a>
+                <a href="contacto.html" class="px-5 py-2 bg-[#155d27] text-white rounded-md font-medium hover:bg-[#0f461c] transition-colors text-sm shadow-md">
+                    Contacto
+                </a>
+            </div>
+            
+            <!-- Botón Menú Móvil -->
+            <button id="btn-open-menu" class="md:hidden text-[#155d27] hover:bg-slate-100 p-2 rounded-md transition-colors">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MENÚ MÓVIL DESPLEGABLE -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[100] translate-x-full transition-transform duration-300 ease-in-out flex flex-col pt-20 px-6 md:hidden">
+        <button id="btn-close-menu" class="absolute top-6 right-6 text-[#155d27] hover:bg-slate-100 p-2 rounded-md transition-colors">
+            <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+        
+        <div class="flex flex-col gap-8 text-center mt-10">
+            <a href="index.html" class="mobile-link font-merriweather font-bold text-2xl text-slate-600 hover:text-[#155d27] transition-colors">Inicio</a>
+            <a href="nosotros.html" class="mobile-link font-merriweather font-bold text-2xl text-slate-600 hover:text-[#155d27] transition-colors">Nosotros</a>
+            <a href="actividades.html" class="mobile-link font-merriweather font-bold text-2xl text-slate-600 hover:text-[#155d27] transition-colors">Actividades</a>
+            <a href="contacto.html" class="mobile-link mt-4 px-8 py-4 bg-[#155d27] text-white rounded-md font-medium text-lg shadow-md mx-auto hover:bg-[#0f461c] transition-colors">
+                Contacto
+            </a>
+        </div>
+
+        <div class="mt-auto mb-10 text-center">
+            <p class="text-slate-500 text-sm flex items-center justify-center gap-2 mb-2">
+                <i data-lucide="phone" class="w-4 h-4"></i> 844-455-8699
+            </p>
+            <p class="text-slate-500 text-sm flex items-center justify-center gap-2">
+                <i data-lucide="mail" class="w-4 h-4"></i> emco.slw@outlook.com
+            </p>
+        </div>
+    </div>
+
+    <!-- CABECERA DE LA PÁGINA (HERO INTERNO) -->
+    <header class="relative py-20 bg-[#102a15] text-white">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="Oficinas fondo" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+            <span class="text-[#e2b86b] font-semibold tracking-wider uppercase text-sm mb-3 block">Estamos a tu disposición</span>
+            <h1 class="font-merriweather text-4xl md:text-5xl font-bold mb-4">Ponte en Contacto</h1>
+            <p class="text-white/80 max-w-2xl mx-auto text-lg font-light">
+                Comunícate con nuestras oficinas administrativas o visítanos directamente en Saltillo, Coahuila.
+            </p>
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE DATOS DE CONTACTO Y MAPA -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Columna de Datos de Contacto (5 columnas) -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-green-brand font-bold uppercase tracking-widest text-sm mb-2 block">Información Oficial</span>
+                        <h2 class="font-merriweather text-3xl font-bold text-slate-800 mb-4">Detalles de Localización</h2>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Atendemos consultas referentes a nuestras actividades agrícolas, comerciales y pecuarias a través de nuestros canales directos.
+                        </p>
+                    </div>
+
+                    <!-- Tarjeta Teléfono -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-green-brand/10 flex items-center justify-center text-green-brand shrink-0">
+                            <i data-lucide="phone" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Teléfono Principal</span>
+                            <a href="tel:8444558699" class="text-lg font-bold text-slate-800 hover:text-green-brand transition-colors">844-455-8699</a>
+                            <span class="block text-xs text-slate-500 mt-1">Lunes a Viernes en horario hábil</span>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Correo -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-green-brand/10 flex items-center justify-center text-green-brand shrink-0">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Correo Electrónico</span>
+                            <a href="mailto:emco.slw@outlook.com" class="text-base font-bold text-slate-800 hover:text-green-brand transition-colors break-all">emco.slw@outlook.com</a>
+                            <span class="block text-xs text-slate-500 mt-1">Bandeja de atención corporativa</span>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Dirección -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-green-brand/10 flex items-center justify-center text-green-brand shrink-0">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">Dirección de Oficina</span>
+                            <p class="text-slate-800 font-medium text-sm leading-relaxed">
+                                Luis Echeverría Álvarez #1194 Int. 6A<br>
+                                Col. Cumbres<br>
+                                Saltillo, Coahuila, México
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Columna del Mapa de Google Maps (7 columnas) -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-4 rounded-2xl shadow-md border border-slate-100 h-full">
+                        <div class="w-full h-[500px] rounded-xl overflow-hidden relative">
+                            <!-- Google Maps Iframe centrado en Blvd. Luis Echeverría Álvarez 1194, Cumbres, Saltillo -->
+                            <iframe 
+                                src="https://maps.google.com/maps?q=Blvd.+Luis+Echeverr%C3%ada+%C3%81lvarez+1194,+Cumbres,+Saltillo,+Coahuila&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Ubicación Emcoagro Saltillo">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#102a15] text-white pt-20 pb-10 border-t-[6px] border-earth-brand">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 mb-16">
+            
+            <div class="md:col-span-5">
+                <a href="index.html" class="flex flex-col mb-6">
+                    <span class="font-merriweather font-black text-3xl text-white tracking-tight">EMCOAGRO</span>
+                    <span class="text-xs uppercase tracking-widest text-[#e2b86b] font-semibold mt-1">Empresas Consolidadas Agrícolas</span>
+                </a>
+                <p class="text-white/70 text-sm leading-relaxed mb-6 pr-4">
+                    Un modelo de negocio orientado a la producción, aprovechamiento y comercialización de productos y recursos relacionados con el campo mexicano.
+                </p>
+            </div>
+
+            <div class="md:col-span-4">
+                <h4 class="font-merriweather font-bold text-xl mb-6 text-white">Contacto Directo</h4>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0 text-[#e2b86b]">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs text-white/50 uppercase font-semibold">Teléfono</span>
+                            <a href="tel:8444558699" class="text-white hover:text-[#e2b86b] transition-colors font-medium">844-455-8699</a>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0 text-[#e2b86b]">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xs text-white/50 uppercase font-semibold">Correo Electrónico</span>
+                            <a href="mailto:emco.slw@outlook.com" class="text-white hover:text-[#e2b86b] transition-colors text-sm font-medium">emco.slw@outlook.com</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-3">
+                <h4 class="font-merriweather font-bold text-xl mb-6 text-white">Nuestra Ubicación</h4>
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0 text-[#e2b86b]">
+                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+                    </div>
+                    <p class="text-white/80 text-sm leading-relaxed">
+                        Luis Echeverría Álvarez #1194 Int. 6A<br>
+                        Col. Cumbres<br>
+                        Saltillo, Coahuila<br>
+                        México
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-white/50 text-xs">
+                © 2026 Empresas Consolidadas Agrícolas Emcoagro. Todos los derechos reservados.
+            </p>
+            <div class="flex gap-4">
+                <a href="#" class="text-white/50 hover:text-white text-xs transition-colors">Aviso de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de Íconos y Funcionalidad del Menú Móvil -->
+    <script>
+        lucide.createIcons();
+
+        const btnOpenMenu = document.getElementById('btn-open-menu');
+        const btnCloseMenu = document.getElementById('btn-close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        btnOpenMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+            document.body.style.overflow = 'hidden'; 
+        });
+
+        const closeMenu = () => {
+            mobileMenu.classList.add('translate-x-full');
+            document.body.style.overflow = ''; 
+        };
+
+        btnCloseMenu.addEventListener('click', closeMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+    </script>
+</body>
+</html>
